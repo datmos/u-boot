@@ -85,6 +85,12 @@ config TARGET_DH_STM32MP1_PDK2
 	help
 		Target the DH PDK2 development kit with STM32MP15x SoM.
 
+config TARGET_UNDERSTORY_HELLES
+    bool "Understory Helles Board"
+    select STM32MP15x
+   	help
+ 		target the Understory Helles rev0 board with SOC STM32MP15x
+ 		managed by board/understory/helles
 endchoice
 
 config STM32MP1_TRUSTED
@@ -178,5 +184,6 @@ endif
 
 source "board/st/stm32mp1/Kconfig"
 source "board/dhelectronics/dh_stm32mp1/Kconfig"
+source "board/understory/helles/Kconfig"
 
 endif

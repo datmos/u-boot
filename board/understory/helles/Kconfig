@@ -1,0 +1,12 @@
+if TARGET_UNDERSTORY_HELLES
+
+config SYS_BOARD
+	default "helles"
+
+config SYS_VENDOR
+	default "understory"
+
+config SYS_CONFIG_NAME
+	default "stm32mp1"
+
+endif
